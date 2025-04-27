@@ -6,3 +6,7 @@ export const buildAnuncio = (anuncio) => {
     <p>${anuncio.tipo}</p>
     `
 }
+
+export const buildNoAnunciosAdvice = () => {
+    return '<h3>Lo lamentamos, pero de momento no hay anuncios disponibles. Inténtalo de nuevo más adelante.</h3>'
+}

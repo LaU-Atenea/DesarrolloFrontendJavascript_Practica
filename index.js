@@ -1,3 +1,5 @@
 import { showAnunciosController } from "./show-anuncios/showAnunciosController.js";
 
-showAnunciosController()
+document.addEventListener("DOMContentLoaded", () => {
+    showAnunciosController()
+})

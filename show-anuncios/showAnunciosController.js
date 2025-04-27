@@ -1,9 +1,21 @@
-import { anuncios } from './showAnunciosModel.js'
-import { buildAnuncio } from './showAnunciosView.js';
+import { getAnuncios } from './showAnunciosModel.js'
+import { buildAnuncio, buildNoAnunciosAdvice } from './showAnunciosView.js';
 
-export function showAnunciosController(){
-    
+export async function showAnunciosController(){
     const container = document.querySelector(".anuncio-container")
+    const anuncios = await getAnuncios();
+
+    if (anuncios.length > 0) {
+        drawAnuncios(anuncios, container)
+    } else {
+        container.innerHTML = buildNoAnunciosAdvice()
+    }
+
+ }
+
+ function drawAnuncios(anuncios, container) {
+    
+    container.innerHTML = '';
 
     anuncios.forEach((anuncio) => {
         
@@ -12,4 +24,4 @@ export function showAnunciosController(){
 
         container.appendChild(anuncioHtml)
     })
-}
+ }
