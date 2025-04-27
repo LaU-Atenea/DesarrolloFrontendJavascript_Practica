@@ -1,5 +1,5 @@
 import { registerController } from "./register/registerController.js";
-import {notificationsController} from "./notifications/notificationsController.js"
+import { notificationsController } from "./notifications/notificationsController.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.querySelector("form");

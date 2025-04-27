@@ -1,6 +1,6 @@
 import { buildNotification } from "./notificationsView.js";
 
-export function noticationsController(notifications){
+export function notificationsController(notifications){
     const removeNotification = (newNotifications) => {
         newNotifications.remove();
     }
