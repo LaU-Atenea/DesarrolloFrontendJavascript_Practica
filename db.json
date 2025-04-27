@@ -1,1 +1,44 @@
-{"users":[],"anuncios":[{"handler":"@usuario1","date":"2025-04-01T20:03:01.320Z","nombre":"Cama","descripcion":"Cama muy espaciosa de 1,80 metros","precio":40,"tipo":"Compra"},{"handler":"@usuario2","date":"2025-03-30T20: 03: 01.320Z","nombre":"Ordenador","descripcion":"Ordenador Windows con gran potencia y almacenaje en el disco duro.","precio":3,"tipo":"Compra"},{"handler":"@usuario3","date":"2025-03-29T20: 03: 01.320Z","nombre":"Telefono","descripcion":"De la marca Samsung, de color gris, se encuentra en perfecto estado.","precio":34,"tipo":"Venta"},{"handler":"@usuario4","date":"2025-03-28T0: 03: 01.320Z","nombre":"Camiseta","descripcion":"Camiseta de mujer de color blanco, con dinujos de flores.","precio":400,"tipo":"Venta"}]}
+{
+  "users": [
+    {
+      "name": "prueba1",
+      "username": "prueba1@prueba1.com",
+      "password": "$2b$10$UzD20kBB7.jVmapQJNnr0.z/JvqTVAwV30ad4w6C6/XV/QJVbhebu",
+      "id": 1
+    }
+  ],
+  "anuncios": [
+    {
+      "handler": "@usuario1",
+      "date": "2025-04-01T20:03:01.320Z",
+      "nombre": "Cama",
+      "descripcion": "Cama muy espaciosa de 1,80 metros",
+      "precio": 40,
+      "tipo": "Compra"
+    },
+    {
+      "handler": "@usuario2",
+      "date": "2025-03-30T20: 03: 01.320Z",
+      "nombre": "Ordenador",
+      "descripcion": "Ordenador Windows con gran potencia y almacenaje en el disco duro.",
+      "precio": 3,
+      "tipo": "Compra"
+    },
+    {
+      "handler": "@usuario3",
+      "date": "2025-03-29T20: 03: 01.320Z",
+      "nombre": "Telefono",
+      "descripcion": "De la marca Samsung, de color gris, se encuentra en perfecto estado.",
+      "precio": 34,
+      "tipo": "Venta"
+    },
+    {
+      "handler": "@usuario4",
+      "date": "2025-03-28T0: 03: 01.320Z",
+      "nombre": "Camiseta",
+      "descripcion": "Camiseta de mujer de color blanco, con dinujos de flores.",
+      "precio": 400,
+      "tipo": "Venta"
+    }
+  ]
+}
