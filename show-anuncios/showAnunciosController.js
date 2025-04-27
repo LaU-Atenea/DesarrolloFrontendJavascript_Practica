@@ -1,18 +1,21 @@
 import { getAnuncios } from './showAnunciosModel.js'
 import { buildAnuncio, buildNoAnunciosAdvice} from './showAnunciosView.js';
 
-export async function showAnunciosController(){
-    const container = document.querySelector(".anuncio-container")
-    const loader = document.querySelector(".loader")
+export async function showAnunciosController(container){
 
     try {
-      loader.classList.remove("hidden")
+      const event = new CustomEvent("load-anuncios-started")
+      container.dispatchEvent(event)
       const anuncios = await getAnuncios();
       drawAnuncios(anuncios, container)
     } catch (error) {
-      alert(error.message)
+      const event = new CustomEvent("load-anuncios-error", {
+        detail: error.message
+      })
+      container.dispatchEvent(event)
     } finally {
-      loader.classList.add("hidden")
+      const event = new CustomEvent("load-anuncios-finished")
+      container.dispatchEvent(event)
     }
 
  }
